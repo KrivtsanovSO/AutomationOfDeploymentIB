@@ -1,0 +1,3441 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.3/config/merge/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" platformVersion="8.3.11">
+	<MainConfiguration>
+		<Name>ЗарплатаИУправлениеПерсоналомКОРП</Name>
+		<Version>3.1.19.48</Version>
+		<Vendor>Фирма "1С"</Vendor>
+	</MainConfiguration>
+	<SecondConfiguration>
+		<Name>ОбменТОИР20ЗУП</Name>
+		<Version>2.1</Version>
+		<Vendor>ООО "Деснол Софт Проджект"</Vendor>
+	</SecondConfiguration>
+	<Parameters>
+		<ConfigurationsRelation>ConfigurationsNotRelated</ConfigurationsRelation>
+		<AllowMainConfigurationObjectDeletion>false</AllowMainConfigurationObjectDeletion>
+		<CopyObjectsMode>false</CopyObjectsMode>
+	</Parameters>
+	<Objects>
+		<Configuration>
+			<Properties>
+				<Property name="Name">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultRoles">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Vendor">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Version">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="UpdateCatalogAddress">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagedApplicationModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="SessionModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="OrdinaryApplicationModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="IncludeHelpInContents">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="UseManagedFormInOrdinaryApplication">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultReportForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultReportVariantForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultReportSettingsForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CommandInterface">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="HomePageWorkArea">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="MainSectionCommandInterface">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="MainSectionPicture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ClientApplicationInterface">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BriefInformation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DetailedInformation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Splash">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Copyright">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="VendorInformationAddress">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ConfigurationInformationAddress">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="SynchronousPlatformExtensionAndAddInCallUseMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InterfaceCompatibilityMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Configuration>
+		<Object fullName="CommonModule.СинхронизацияДанныхЗарплатаКадрыСервер">
+			<Properties>
+				<Property name="Module">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Module>
+						<Methods>
+							<Method name="ДанныеОбъекта">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИспользованиеОтбораПоОрганизациямИзменилось">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИспользованиеОтбораПоПодразделениямИзменилось">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИспользуетсяСтруктураПредприятия">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИспользуютсяУзлыРИБСОтбором">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИспользуютсяУзлыРИБСОтборомПоОрганизациям">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИспользуютсяУзлыРИБСОтборомПоПодразделениям">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="МетаданныеРегистраСведенийПодразделенийСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="МетаданныеРегистраСведенийПодразделенийФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="МетаданныеРегистраСведенийУтраченныхПодразделенийФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбщиеОбъекты">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбъектыИзмененияОрганизацийСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбъектыИзмененияПодразделенийСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбъектыПринадлежностиФизическихЛицОрганизациям">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбъектыПринадлежностиФизическихЛицПодразделениям">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбъектыРегламентированногоУчета">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбъектыУправленческогоУчета">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОписаниеКолонки">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОписаниеТипаПринадлежности">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОрганизацииСотрудниковЗаполнены">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОрганизацииСотрудниковЗаполняются">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОрганизацииФизическихЛицЗаполняются">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПодразделенияСотрудниковЗаполнены">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПодразделенияСотрудниковЗаполняются">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПодразделенияФизическихЛицЗаполняются">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПодчиненныеОрганизации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПолныйНаборЗаписей">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПолучателиИзКэшаПоФизическомуЛицуГоловнойОрганизации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПолучателиОбъекта">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПолучателиПоТаблицеФизическихЛицГоловныхОрганизаций">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПринадлежностьФизическихЛицПоОрганизациямЗаполнена">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПринадлежностьФизическихЛицПоПодразделениямЗаполнена">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="СвойствоСтруктуры">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="СвязанныеРегистрыСведенийОбъекта">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="СинхронизацияРазрешена">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаДанныхРегистрации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаЗависимыхДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаИзМассивов">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаОрганизацийСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПодразделенийСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПринадлежностиФизическихЛицОрганизаций">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПринадлежностиФизическихЛицПоДокументам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПринадлежностиФизическихЛицПодразделений">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПринадлежностиФизическихЛицПоМестуВСтруктуреПредприятия">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПринадлежностиФизическихЛицПоСправочникам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ТаблицаПринадлежностиФизЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЧислоПопытокОбработкиДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЭтотУзелПланаОбмена">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ВыполнитьПравилаРегистрацииПоДвижениямДокумента">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДобавитьВедущиеДанныеДляОбработкиЗависимыхДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДобавитьВКэшПолучателейПоФизическомуЛицуГоловнойОрганизации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДобавитьОбъектыРегистрирующиеЗависимыеОбъекты">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДобавитьПараметрОтправитель">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДобавитьПланОбмена" nameInSecondConfiguration="ДобавитьПланОбмена">
+								<MergeRule>DoNotMerge</MergeRule>
+								<Patch/>
+							</Method>
+							<Method name="ДобавитьСтрокуВТаблицу">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДополнитьКэшПоНаборуЗаписей">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДополнитьТаблицуПринадлежностиСотрудниковПоДокументам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДополнитьТаблицуПринадлежностиСотрудниковПоМестуВСтруктуреПредприятия">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ДополнитьТаблицуПринадлежностиСотрудниковПоСправочникам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаписатьВЖурналРегистрации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаполнитьПолучателейНабораЗаписейПриВыгрузке">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаполнитьПолучателейНабораЗаписейПриРегистрации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаполнитьПрежниеЗначения">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаполнитьТаблицуДанныхРегистрации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаполнитьТаблицуЗависимыхДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗаполнитьТаблицуПринадлежностиСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗапуститьОтложеннуюОбработкуЗаполненияДанныхПоСотрудникам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗапуститьОтложеннуюОбработкуЗаполненияДанныхПоФизическимЛицам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьЗавершенияЗаполненияНастройкиОрганизацийСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьЗавершенияЗаполненияНастройкиОрганизацийФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьЗавершенияЗаполненияНастройкиПодразделенийСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьЗавершенияЗаполненияНастройкиПодразделенийФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьИзменениеКадровойИсторииПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьИзмененияПередОбработкой">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьИзмененияПослеОбработки">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьИзмененияПриОбработке">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьИзмененияПриОбработкеДоп">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьОбработчикиОбновления">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьОрганизацииПоСотрудникам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьОрганизацииСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьОрганизацииСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьОрганизацииФизическихЛицУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПодразделенияПоСотрудникам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПодразделенияСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПодразделенияСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПодразделенияФизическихЛицУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПринадлежностьСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПринадлежностьФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПринадлежностьФизическихЛицОрганизаций">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьПринадлежностьФизическихЛицПодразделений">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьСвязанныеПрисоединенныеФайлыИРегистрыСведенийОбъекта">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьСвязанныеРегистрыСведенийОбъекта">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьСовместноРегистрируемыеОбъекты">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныеОрганизацииСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныеПодразделенияСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныхСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныхСотрудниковПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныхФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныхФизическихЛицОрганизаций">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныхФизическихЛицПодразделений">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ЗарегистрироватьУтраченныхФизическихЛицПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИзменитьТекстЗапросаПоЗначениямМассива">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИнициализироватьТаблицуЗависимыхДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИнициализироватьТаблицуОбъектовРегистрирующихЗависимыеОбъекты">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИсключитьЗагружаемыйУзел">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ИсключитьПолучателейНеСоответствующиеОтбору">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="НастроитьВариантыОтчетов">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьЗависимыеДанныеТекущиеКадровыеДанныеСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьОрганизацииСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьПодразделенияСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьПринадлежностьФизическихЛицОрганизаций">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьПринадлежностьФизическихЛицПодразделений">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьСвязиСотрудниковСОрганизациями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьСвязиСотрудниковСПодразделениями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьСвязиФизическихЛицСОрганизациями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьСвязиФизическихЛицСПодразделениями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновитьУзлыПлановОбменов">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновлениеСвязейСотрудниковСОрганизациями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновлениеСвязейСотрудниковСПодразделениями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновлениеСвязейФизическихЛицСОрганизациями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОбновлениеСвязейФизическихЛицСПодразделениями">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОграничитьРегистрациюНабораОтборомПоГоловнойОрганизации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОграничитьРегистрациюОбъектаОтборомПоГоловнымОрганизациям">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОграничитьРегистрациюОбъектаОтборомПоОрганизациям">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОграничитьРегистрациюОбъектаОтборомПоСотруднику">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОграничитьРегистрациюОбъектаОтборомПоФизическимЛицам">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОграничитьРегистрациюПодчиненногоОбъектаПоРегистрацииОбъектаВладельца">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОпределитьМассивыУзловДляНабораЗаписейПоРегистрацииОбъектаВладельца">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОрганизацииСотрудниковПередЗаписью">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОрганизацииСотрудниковПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОчиститьОрганизацииСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОчиститьОрганизацииСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОчиститьПодразделенияСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОчиститьПодразделенияСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ОчиститьПринадлежностиФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПолучитьПланыОбмена" nameInSecondConfiguration="ПолучитьПланыОбмена">
+								<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+							</Method>
+							<Method name="ПослеЗагрузкиЗависимыхДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПослеЗагрузкиОбъектовРегистрирующихЗависимыеОбъекты">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПринадлежностьФизлицаОрганизацииПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПринадлежностьФизлицаПередЗаписью">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПринадлежностьФизлицаПодразделениюПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриНастройкеПодчиненногоУзлаРИБ">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриОпределенииНастроекРегламентныхЗаданий">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриОпределенииОбъектовСКомандамиПечати">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриОпределенииПсевдонимовОбработчиков">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриПолученииДанныхФайла">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриПолученииЗависимыхДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриПолученииОбъектовРегистрирующихЗависимыеОбъекты">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриПолученииСпискаШаблоновОчередиЗаданий">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПроверитьОрганизацииСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПроверитьПодразделенияСотрудниковУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПроверитьПринадлежностьФизическихЛицУтраченные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="РегистрацияИзмененийНачальнойВыгрузкиДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УзелПланаОбменаРаспределеннойБазыПередЗаписью">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УзелПланаОбменаРаспределеннойБазыПриЗаписи">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УстановитьИспользованиеСинхронизацииСОтборами">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УстановитьОрганизацииСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УстановитьПодразделенияСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УстановитьПринадлежностиФизическихЛицОрганизаций">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="УстановитьПринадлежностиФизическихЛицПодразделений">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<DirectiveArea name="ПрограммныйИнтерфейс">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ДляВызоваИзДругихПодсистем">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="СлужебныйПрограммныйИнтерфейс">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ШаблоныПравилРегистрации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ФизическиеЛица">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="Сотрудники">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ОбъектыКонфигурации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ОчередьЗаданий">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="РегламентныеЗадания">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="СлужебныеПроцедурыИФункции">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ЗаписьУзлаПлановОбмена">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ОбработчикиПравилРегистрации">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ВторичныеДанные">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="РегистрацияДанныхПослеЗагрузки">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ОбновлениеИнформационнойБазы">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ФизическиеЛица">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ИзменениеОбъектовПринадлежностиФизическихЛиц">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="Сотрудники">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+							<DirectiveArea name="ИзменениеОбъектовИзменяющихПринадлежностьСотрудников">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+						</Methods>
+					</Module>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.ЗагрузитьПравилаРегистрацииОбъектов">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменВРаспределеннойИнформационнойБазе">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменЗарплата3Бухгалтерия3">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменТОИР20ЗУП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.НастройкиПодключения">
+			<Properties>
+				<Property name="CommandModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.АвтономнаяРабота">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменВРаспределеннойИнформационнойБазе">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменЗарплата3Бухгалтерия3">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменСообщениями">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменТОИР20ЗУП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.НастройкиСинхронизацииДанных">
+			<Properties>
+				<Property name="CommandModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.Синхронизировать">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СинхронизироватьСДополнительнымиПараметрами">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СобытияОтправки">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СобытияПолучения">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СоставОтправляемыхДанных">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СценарииСинхронизации">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.УдалитьНастройкуСинхронизации">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingSecondConfiguration</MergeRule>
+					<Types/>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommandGroup.СинхронизацияДанных">
+			<Properties>
+				<Property name="Picture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommandGroup.ПараметрыСинхронизацииДанных">
+			<Properties>
+				<Property name="Picture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Attribute.ПроизводственныйКалендарь">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Attribute.СпособЗаполнения">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Attribute.УдалитьСпособЗаполнения">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Attribute.СпособОпределенияНормыСуммированногоУчета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Attribute.РежимРаботы">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.TabularSection.ШаблонЗаполнения.Attribute.Смена">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.TabularSection.ВидыВремени.Attribute.ВидВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.TabularSection.ДанныеОРабочихЧасах.Attribute.НомерДняЦикла">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.TabularSection.ДанныеОРабочихЧасах.Attribute.ВидВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Form.ФормаГрафика">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Form.НастройкаНовогоГрафикаРаботы">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ГрафикиРаботыСотрудников.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.ОснованиеДосрочногоНазначенияПенсии">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.УдалитьОснованиеДосрочногоНазначенияПенсии">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.ВзимаютсяВзносыЗаЗанятыхНаРаботахСДосрочнойПенсией">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.КатегорияВоинскогоУчета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.КатегорияУчетаЗабронированных">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.УдалитьСтрокаОтчетностиМониторингаРаботниковСоциальнойСферы">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.ОсобыеУсловияТрудаПФР">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.УдалитьОсобыеУсловияТрудаПФР">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.КодПозицииСпискаПФР">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.ТарифнаяСетка">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.РазрядКатегория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.ТарифнаяСеткаНадбавки">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Attribute.РазрядКатегорияНадбавки">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.TabularSection.Специальности.Attribute.Специальность">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.TabularSection.ЗависимыеСтажи.Attribute.ВидСтажа">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Form.ФормаЭлемента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Должности.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Attribute.ВидОбменаСКонтролирующимиОрганами">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Attribute.ГоловнаяОрганизация">
+			<Properties>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Attribute.КодПоОКПО">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Attribute.РегистрацияВНалоговомОргане">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Attribute.УчетнаяЗаписьОбмена">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Attribute.ЮридическоеФизическоеЛицо">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Тип">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Вид">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.ЗначенияПолей">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Страна">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Регион">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Город">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.АдресЭП">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.ДоменноеИмяСервера">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефона">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефонаБезКодов">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.ВидДляСписка">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Значение">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Form.ФормаЭлемента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.Attribute.РегистрацияВНалоговомОргане">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.Attribute.ГрафикРаботыСотрудников">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.Attribute.ПрименяемыйЛьготныйТерриториальныйТариф">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullNameInSecondConfiguration="Catalog.ПодразделенияОрганизаций.Attribute.УдалитьТерриториальныеУсловияПФР">
+			<MergeRule>DoNotMerge</MergeRule>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.TabularSection.ЗависимыеСтажи.Attribute.ВидСтажа">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ПодразделенияОрганизаций.Form.ФормаЭлемента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.TabularSection.УдалитьНаборыЗначенийДоступа.Attribute.ЗначениеДоступа">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.TabularSection.УдалитьНаборыЗначенийДоступа.Attribute.Уточнение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ФормаЭлемента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ДоходыСПредыдущегоМестаРаботы">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ВычетыСПредыдущегоМестаРаботы">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ФормаИсторииИзмененияМестаРаботы">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ДоговорыГПХ">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.НалогНаДоходы">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ВыплатаЗарплаты">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ЛичныеДанные">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.НачисленияИУдержания">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.Отсутствия">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ФормаВыбора">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ФормаИсторииИзмененияОплатыТруда">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Form.ФормаИсторииИзмененияУдержаний">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullNameInSecondConfiguration="Catalog.Сотрудники.Form.СОТП">
+			<MergeRule>DoNotMerge</MergeRule>
+		</Object>
+		<Object fullName="Catalog.Сотрудники.Command.ИсторияИзмененийЛичныхДанных">
+			<Properties>
+				<Property name="Picture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица">
+			<Properties>
+				<Property name="Comment">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Attribute.Пол">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Attribute.ГруппаДоступа">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Attribute.ФИО">
+			<Properties>
+				<Property name="FillChecking">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Attribute.ЛьготаПриНачисленииПособий">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Attribute.УдалитьИнициалыИмени">
+			<Properties>
+				<Property name="Name">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Тип">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Вид">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.ЗначенияПолей">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Страна">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Регион">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Город">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.АдресЭП">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.ДоменноеИмяСервера">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефона">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефонаБезКодов">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.ВидДляСписка">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.КонтактнаяИнформация.Attribute.Значение">
+			<Properties>
+				<Property name="FullTextSearch">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьСоставСемьи.Attribute.СтепеньРодства">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьОбразование.Attribute.ВидОбразования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьОбразование.Attribute.УчебноеЗаведение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьОбразование.Attribute.Специальность">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьЗнаниеЯзыков.Attribute.Язык">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьЗнаниеЯзыков.Attribute.СтепеньЗнанияЯзыка">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьПрофессии.Attribute.Профессия">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьСтажи.Attribute.ВидСтажа">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьНаграды.Attribute.Награда">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьУченыеСтепени.Attribute.УченаяСтепень">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьУченыеЗвания.Attribute.УченоеЗвание">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.TabularSection.УдалитьУченыеЗвания.Attribute.НаучнаяСпециальность">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаГруппы">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаЭлемента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаВыбораПоРоли">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаВыбораСотрудников">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаВыбораРолейФизическогоЛица">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФормаРедактированияПроцентаСевернойНадбавки">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ПроверкаУникальностиПоИННиСНИЛС">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ФизическиеЛицаСПохожимиДанными">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ВоинскийУчет">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.Семья">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ТрудоваяДеятельность">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.Страхование">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.ОбразованиеКвалификация">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица.Form.Справки">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullNameInSecondConfiguration="Catalog.ФизическиеЛица.Form.Работа">
+			<MergeRule>DoNotMerge</MergeRule>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BasedOn">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ДолжностьПоШтатномуРасписанию">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ВидЗанятости">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.СпособРасчетаАванса">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.СпособОтраженияЗарплатыВБухучете">
+			<Properties>
+				<Property name="Comment">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ОтношениеКЕНВД">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.СтатьяФинансирования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ПорядокРасчетаСтоимостиЕдиницыВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.СовокупнаяТарифнаяСтавка">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ВидТарифнойСтавки">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.РазрядКатегория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ВидДоговора">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ТрудовойДоговорНомер">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ОснованиеСрочногоДоговора">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ОснованиеПредставителяНанимателя">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.Грейд">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ВидСтажаПФР">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.Территория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.ПКУ">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.Решение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.КоэффициентИндексации">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Attribute.Ответственный">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Form.ФормаДокумента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.Form.ФормаРедактированияПравНаОтпуск">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Начисления.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Начисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Начисления.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Начисления.Attribute.ХарактерНачисления">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.УправленческиеНачисления.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.УправленческиеНачисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Показатели.Attribute.Показатель">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Показатели.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Показатели.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.ЕжегодныеОтпуска.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.ЕжегодныеОтпуска.Attribute.ВидЕжегодногоОтпуска">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Льготы.Attribute.Льгота">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Льготы.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.Льготы.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.КадровыйРезерв.Attribute.ПозицияРезерва">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.КадровыйРезерв.Attribute.ВидРезерва">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.КадровыйРезерв.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.КадровыйРезерв.Attribute.Статус">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПеревод.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПереводСписком">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПереводСписком.Form.ФормаДокумента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПереводСписком.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.КадровыйПереводСписком.Form.ФормаСтроки">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ДолжностьПоШтатномуРасписанию">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ВидЗанятости">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.СпособРасчетаАванса">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.СпособОтраженияЗарплатыВБухучете">
+			<Properties>
+				<Property name="Comment">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ОтношениеКЕНВД">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.СтатьяФинансирования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ПорядокРасчетаСтоимостиЕдиницыВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.СовокупнаяТарифнаяСтавка">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ВидТарифнойСтавки">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.РазрядКатегория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ВидДоговора">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ТрудовойДоговорНомер">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ОснованиеСрочногоДоговора">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ОснованиеПредставителяНанимателя">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.Грейд">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.Территория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.ПКУ">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.Решение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Attribute.Ответственный">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Form.ФормаДокумента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.Form.ФормаРедактированияПравНаОтпуск">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.Начисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.УправленческиеНачисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.Показатели.Attribute.Показатель">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.Показатели.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.ЕжегодныеОтпуска.Attribute.ВидЕжегодногоОтпуска">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.Льготы.Attribute.Льгота">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботу.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.ПриемНаРаботуСписком">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BasedOn">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.СтатьяТКРФ">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.УдалитьСтатьяТКРФ">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ВыходноеПособие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ПризнакКомпенсацииУдержанияОтпуска">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ВидРасчетаКомпенсацииУдержанияОтпуска">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ПорядокВыплаты">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.Рассчитал">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ОснованиеПодписиРуководителя">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ОснованиеПодписиГлавногоБухгалтера">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ОснованиеПодписиБухгалтера">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ОснованиеПодписиРаботникаКадровойСлужбы">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ОснованиеПодписиИсполнителя">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.ВидРасчетаМесячноеДенежноеСодержание">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.УдалитьВидДоговора">
+			<Properties>
+				<Property name="Name">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="FillValue">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.Решение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.КомпенсацияЗаНеотработанныеДниЧасыПриУвольнении">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Attribute.Ответственный">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Form.ФормаДокумента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДанныеОбИндексации.Attribute.КоэффициентИндексации">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДополнительныеОтпуска.Attribute.ВидОтпуска">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДополнительныеОтпуска.Attribute.ВидРасчетаКомпенсацииУдержания">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДополнительныеОтпуска.Attribute.ПризнакКомпенсацииУдержания">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НДФЛ.Attribute.Подразделение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НДФЛ.Attribute.ПримененныйВычетЛичныйКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НДФЛ.Attribute.УдалитьПримененныйВычетЛичныйКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НДФЛ.Attribute.ПримененныйВычетЛичныйКЗачетуВозвратуКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НДФЛ.Attribute.УдалитьПримененныйВычетЛичныйКЗачетуВозвратуКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НДФЛ.Attribute.КатегорияДохода">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.Сотрудник">
+			<Properties>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.КодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.УдалитьКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.ВидУчетаВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.СторнируемыйДокумент">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Начисления.Attribute.МестоПолученияДохода">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.СторнируемыйДокумент">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.КодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.УдалитьКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.ВидУчетаВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.МестоПолученияДохода">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.НачисленияПерерасчет.Attribute.РегистраторРазовогоНачисления">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УправленческиеНачисления.Attribute.Сотрудник">
+			<Properties>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УправленческиеНачисления.Attribute.Подразделение">
+			<Properties>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УправленческиеНачисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УправленческиеНачисления.Attribute.ВидУчетаВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УправленческиеНачисления.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ОтработанноеВремяДляСреднегоОбщий.Attribute.ПорядокРасчета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ОтработанноеВремяДляСреднегоОбщий.Attribute.Источник">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПогашениеЗаймов.Attribute.ДоговорЗайма">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПогашениеЗаймов.Attribute.СтавкаНалогообложенияМатвыгоды">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Показатели.Attribute.Показатель">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Показатели.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Пособия.Attribute.ВидЗанятости">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Пособия.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Пособия.Attribute.ФинансированиеФедеральнымБюджетом">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Пособия.Attribute.СтраховойСлучай">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Пособия.Attribute.МестоПолученияДохода">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПособияПерерасчет.Attribute.ВидЗанятости">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПособияПерерасчет.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameters">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПособияПерерасчет.Attribute.СторнируемыйДокумент">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПособияПерерасчет.Attribute.ФинансированиеФедеральнымБюджетом">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПособияПерерасчет.Attribute.СтраховойСлучай">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПособияПерерасчет.Attribute.МестоПолученияДохода">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПримененныеВычетыНаДетейИИмущественные.Attribute.КодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ПримененныеВычетыНаДетейИИмущественные.Attribute.УдалитьКодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СреднийЗаработокОбщий.Attribute.ПорядокРасчета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СреднийЗаработокОбщий.Attribute.СоставнаяЧасть">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СреднийЗаработокОбщий.Attribute.СтатьяФинансирования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СреднийЗаработокОбщий.Attribute.СпособОтраженияЗарплатыВБухучете">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СреднийЗаработокОбщий.Attribute.СтатьяРасходов">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СреднийЗаработокОбщий.Attribute.Источник">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Удержания.Attribute.Удержание">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Удержания.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Удержания.Attribute.Получатель">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Удержания.Attribute.ПлатежныйАгент">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовНачислений.Attribute.Территория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовНачислений.Attribute.СтатьяФинансирования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовНачислений.Attribute.СтатьяРасходов">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовНачислений.Attribute.СпособОтраженияЗарплатыВБухучете">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовУдержаний.Attribute.ВидУдержания">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовУдержаний.Attribute.Подразделение">
+			<Properties>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовУдержаний.Attribute.СтатьяФинансирования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеРезультатовУдержаний.Attribute.СтатьяРасходов">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДенежноеСодержание.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДенежноеСодержание.Attribute.УдалитьСоставнаяЧасть">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДенежноеСодержаниеФактическиеНачисления.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Льготы.Attribute.Подразделение">
+			<Properties>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Льготы.Attribute.Начисление">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Льготы.Attribute.КодВычета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Льготы.Attribute.ВидУчетаВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Льготы.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.Льготы.Attribute.МестоПолученияДохода">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КадровыйРезерв.Attribute.ПозицияРезерва">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КадровыйРезерв.Attribute.ВидРезерва">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КадровыйРезерв.Attribute.Действие">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КадровыйРезерв.Attribute.Статус">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеПоТерриториямУсловиямТруда.Attribute.Территория">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеПоТерриториямУсловиямТруда.Attribute.УсловияТруда">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.РаспределениеПоТерриториямУсловиямТруда.Attribute.ДоляРаспределения">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.ДополнительныеРеквизиты.Attribute.Значение">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КоэффициентыРаспределенияДенежногоСодержания.Attribute.СтатьяФинансирования">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КоэффициентыРаспределенияДенежногоСодержания.Attribute.СтатьяРасходов">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.КоэффициентыРаспределенияДенежногоСодержания.Attribute.СпособОтраженияЗарплатыВБухучете">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СотрудникиПерерасчет.Attribute.ВидРасчета">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.СотрудникиПерерасчет.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УчтенныеПриРасчетеНДФЛДокументы.Attribute.ФизическоеЛицо">
+			<Properties>
+				<Property name="ChoiceParameterLinks">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.Увольнение.TabularSection.УчтенныеПриРасчетеНДФЛДокументы.Attribute.ДокументОснование">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.УвольнениеСписком">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.УвольнениеСписком.Form.ФормаДокумента">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.УвольнениеСписком.Form.ФормаСписка">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.УвольнениеСписком.Form.ФормаСтроки">
+			<Properties>
+				<Property name="Form">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз">
+			<Properties>
+				<Property name="RecordSetModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Dimension.УзелИнформационнойБазы">
+			<Properties>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СостоянияСотрудников">
+			<Properties>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СостоянияСотрудников.Resource.Состояние">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СостоянияСотрудников.Resource.ВидВремени">
+			<Properties>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+	</Objects>
+</Settings>
