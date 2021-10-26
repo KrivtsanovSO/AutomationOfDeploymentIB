@@ -1,0 +1,1499 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.3/config/merge/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" platformVersion="8.3.11">
+	<MainConfiguration>
+		<Name>УправлениеТорговлей</Name>
+		<Version>11.4.13.281</Version>
+		<Vendor>Фирма "1С"</Vendor>
+	</MainConfiguration>
+	<SecondConfiguration>
+		<Name>ОбменТОИР20УТ11</Name>
+		<Version>2.2.3.1</Version>
+		<Vendor>ООО "Деснол Софт Проджект"</Vendor>
+	</SecondConfiguration>
+	<Parameters>
+		<ConfigurationsRelation>ConfigurationsNotRelated</ConfigurationsRelation>
+		<AllowMainConfigurationObjectDeletion>false</AllowMainConfigurationObjectDeletion>
+		<CopyObjectsMode>false</CopyObjectsMode>
+	</Parameters>
+	<Objects>
+		<Configuration>
+			<Properties>
+				<Property name="Name">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultRoles">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Vendor">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Version">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="UpdateCatalogAddress">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagedApplicationModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="SessionModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ExternalConnectionModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="OrdinaryApplicationModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="UseManagedFormInOrdinaryApplication">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="UseOrdinaryFormInManagedApplication">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ReportsVariantsStorage">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultReportForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultReportVariantForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultReportSettingsForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultSearchForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CommandInterface">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="HomePageWorkArea">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="MainSectionCommandInterface">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="MainSectionPicture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ClientApplicationInterface">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BriefInformation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DetailedInformation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Splash">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Copyright">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="VendorInformationAddress">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ConfigurationInformationAddress">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ModalityUseMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="SynchronousPlatformExtensionAndAddInCallUseMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InterfaceCompatibilityMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Configuration>
+		<Object fullNameInSecondConfiguration="Subsystem.ОбменДаннымиТОИР20УТ11">
+			<MergeRule>DoNotMerge</MergeRule>
+		</Object>
+		<Object fullName="CommonModule.ОбменДаннымиПереопределяемый">
+			<Properties>
+				<Property name="Module">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Module>
+						<Methods>
+							<Method name="ПолучитьПланыОбмена" nameInSecondConfiguration="ПолучитьПланыОбмена">
+								<MergeRule>GetFromSecondConfiguration</MergeRule>
+								<Patch>@@ -1,20 +1,9 @@
+-
+-// Определяет список планов обмена, которые используют функционал подсистемы обмена данными.
+-//
+-// Параметры:
+-//  ПланыОбменаПодсистемы - Массив из ОбъектМетаданныхПланОбмена - массив планов обмена конфигурации,
+-//                          которые используют функционал подсистемы обмена данными.
+-//                          Элементами массива являются объекты метаданных планов обмена.
+-//
+-// Пример:
+-//   ПланыОбменаПодсистемы.Добавить(Метаданные.ПланыОбмена.ОбменБезИспользованияПравилКонвертации);
+-//   ПланыОбменаПодсистемы.Добавить(Метаданные.ПланыОбмена.ОбменСБиблиотекойСтандартныхПодсистем);
+-//   ПланыОбменаПодсистемы.Добавить(Метаданные.ПланыОбмена.РаспределеннаяИнформационнаяБаза);
+-//
+ Процедура ПолучитьПланыОбмена(ПланыОбменаПодсистемы) Экспорт
+ 	
++	ПланыОбменаПодсистемы.Добавить(Метаданные.ПланыОбмена.ОбменТОиР20УТ11);
++	
+ 	//++ НЕ ГОСИС
+ 	ОбменДаннымиЛокализация.ПолучитьПланыОбмена(ПланыОбменаПодсистемы);
+ 	//-- НЕ ГОСИС
+ 	
+-КонецПроцедуры
++КонецПроцедуры
+\ No newline at end of file
+</Patch>
+							</Method>
+							<Method name="ПриВыгрузкеДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриЗагрузкеДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриКоллизииИзмененийДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриНастройкеПодчиненногоУзлаРИБ">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриОпределенииПрефиксаИнформационнойБазыПоУмолчанию">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриПолученииДоступныхВерсийФормата">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="ПриПолученииДоступныхРасширенийФормата">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<Method name="РегистрацияИзмененийНачальнойВыгрузкиДанных">
+								<MergeRule>DoNotMerge</MergeRule>
+							</Method>
+							<DirectiveArea name="ПрограммныйИнтерфейс">
+								<MergeRule>DoNotMerge</MergeRule>
+							</DirectiveArea>
+						</Methods>
+					</Module>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.ЗагрузитьКомплектПравил">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.ЗагрузитьПравилаКонвертацииОбъектов">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.ЗагрузитьПравилаРегистрацииОбъектов">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.НастройкиПодключения">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.ПолучитьНастройкиСинхронизацииДляДругойПрограммы">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.Синхронизировать">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СинхронизироватьСДополнительнымиПараметрами">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СобытияОтправки">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменСообщениями">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СобытияПолучения">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменСообщениями">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СоставОтправляемыхДанных">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.СценарииСинхронизации">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommonCommand.УдалитьНастройкуСинхронизации">
+			<Properties>
+				<Property name="CommandParameterType">
+					<MergeRule>MergePrioritizingMainConfiguration</MergeRule>
+					<Types>
+						<Type Name="ПланОбменаСсылка.ОбменСообщениями">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменТОиР20УТ11">
+							<MergeRule>GetFromSecondConfiguration</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятия30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейБухгалтерияПредприятияКОРП30">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейДокументооборот20">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.ОбменУправлениеТорговлейРозница">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.Полный">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СОтборами">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+						<Type Name="ПланОбменаСсылка.СинхронизацияДанныхЧерезУниверсальныйФормат">
+							<MergeRule>DoNotMerge</MergeRule>
+						</Type>
+					</Types>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommandGroup.ПараметрыСинхронизацииДанных">
+			<Properties>
+				<Property name="Picture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="CommandGroup.СинхронизацияДанных">
+			<Properties>
+				<Property name="Picture">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Валюты">
+			<Properties>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ВидыНоменклатуры">
+			<Properties>
+				<Property name="Hierarchical">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CodeLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DescriptionLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CodeAllowedLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CheckUnique">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Autonumbering">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="EditType">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DataLockControlMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ExtendedObjectPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ListPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ExtendedListPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Explanation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ВидыЦен">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Hierarchical">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CodeLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DescriptionLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CodeAllowedLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CheckUnique">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Autonumbering">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="EditType">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="QuickChoice">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DataLockControlMode">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ExtendedObjectPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ListPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ExtendedListPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Explanation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CreateOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ДоговорыКонтрагентов">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BasedOn">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.КонтактныеЛицаПартнеров">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Контрагенты">
+			<Properties>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Predefined">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.НаправленияДеятельности">
+			<Properties>
+				<Property name="DescriptionLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Номенклатура">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="SearchStringModeOnInputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultFolderForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultFolderChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ExtendedListPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Explanation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Организации">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Партнеры">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Пользователи">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DataLockFields">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Производители">
+			<Properties>
+				<Property name="Hierarchical">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CodeLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DescriptionLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CheckUnique">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Autonumbering">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="InputByString">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectPresentation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.РолиКонтактныхЛицПартнеров">
+			<Properties>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.СерииНоменклатуры">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.Склады">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultFolderForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.СтруктураПредприятия">
+			<Properties>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.УпаковкиЕдиницыИзмерения">
+			<Properties>
+				<Property name="Owners">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ФизическиеЛица">
+			<Properties>
+				<Property name="CodeLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CodeAllowedLength">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Autonumbering">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultFolderForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="IncludeHelpInContents">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BasedOn">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="CreateOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Catalog.ХарактеристикиНоменклатуры">
+			<Properties>
+				<Property name="Owners">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="Document.УстановкаЦенНоменклатуры">
+			<Properties>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="BasedOn">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RegisterRecords">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="RecordSetModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Explanation">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Resource.УникальныйИдентификаторИсточникаСтрокой">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Attribute.ОбъектВыгруженПоСсылке">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Dimension.УникальныйИдентификаторПриемника">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Dimension.УникальныйИдентификаторИсточника">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Dimension.ТипПриемника">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Dimension.ТипИсточника">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="InformationRegister.СоответствияОбъектовИнформационныхБаз.Dimension.УзелИнформационнойБазы">
+			<Properties>
+				<Property name="Synonym">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ToolTip">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+		<Object fullName="ChartOfCharacteristicTypes.СтатьиРасходов">
+			<Properties>
+				<Property name="Help">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Type">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="StandardAttributes">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Characteristics">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Predefined">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ChoiceHistoryOnInput">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultObjectForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultListForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="DefaultChoiceForm">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ObjectModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ManagerModule">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Object>
+	</Objects>
+</Settings>
